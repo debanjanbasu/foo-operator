@@ -102,7 +102,7 @@ func (r *FooReconciler) SetupWithManager(mgr ctrl.Manager) error {
 		Complete(r)
 }
 
-// This is the additional function to handle PodMappings
+// This is the additional function to handle Pod Creation Events
 func (r *FooReconciler) mapPodsReqToFooReq(obj client.Object) []reconcile.Request {
 	ctx := context.Background()
 	log := log.FromContext(ctx)
