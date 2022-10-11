@@ -1,0 +1,16 @@
+domain: foo.op
+layout:
+- go.kubebuilder.io/v3
+projectName: foo-operator
+repo: foo.op/fooop
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: foo.op
+  group: tutorial
+  kind: Foo
+  path: foo.op/fooop/api/v1
+  version: v1
+version: "3"
