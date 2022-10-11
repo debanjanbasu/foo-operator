@@ -4,8 +4,8 @@ metadata:
   name: jack
 spec:
   containers:
-    - name: alpine
-      image: alpine:latest
+    - name: busybox
+      image: busybox:latest
       # Just sleep forever
       command: ["sleep"]
       args: ["infinity"]
